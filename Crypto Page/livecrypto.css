@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+#tradingview-widget-container__widget{
+width: 100%;
+height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.tradingview-widget-container {
+  position: relative;
+}
+
+.tradingview-widget-container .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tradingview-widget-container .button-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tradingview-widget-container .button-container button:hover {
+  background-color: #45a049;
+}
+
+.tradingview-widget-container .button-container button:focus {
+  outline: none;
+}
+
+.tradingview-widget-container .button-container button:active {
+  transform: translateY(1px);
+}
+
+.tradingview-widget-container .tradingview-widget-container__widget,
+.tradingview-widget-container .tradingview-widget-copyright {
+  width: 100%;
+}
+
+.tradingview-widget-container .tradingview-widget-copyright {
+  display: none !important;
+}
