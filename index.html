@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LiveCrypto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="img/logo.png" alt="Logo" class="logo">
+    </div>
+  </header>
+</body>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="singup.html">Sing Up</a>
+          <li class="search" onclick="toggleSearchBar()">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass-dollar"></i>
+            </a>
+            <div class="search-bar" id="searchBar">
+              <input type="text" placeholder="Search" onclick="stopPropagation(event)">
+              <button onclick="search()">Search</button>
+            </div>
+          </li>
+          <li class="hamburger" onclick="toggleMenu()">
+            <a href="#">
+              <div class="bar"></div>
+            </a>
+            <ul class="menu2" id="menu2">
+              <li><a href="livecrypto.html" class="yellow">L</a></li>
+              <li><a href="infocrypto.html" class="green">I</a></li>
+            </ul>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="vignette"></div>
+    <img src="img/background.png" class="parallax bg-img">
+    <div class="text parallax">
+      <h2>Live</h2>
+      <h1>Crypto</h1>
+    </div>
+	  <div class="container">
+        <div class="coin-price">
+            <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEi32rDKQR2Swi7YfHjDzyZUBGEmxTz77OClnm24SZl7kWuls7fsVCIfAObY_JRJIReQnBWZIPSVfDLSqDvqeu4CCXCoNQIoUGK-OSDUGMtDJFxh9vmU6WGajIgXH4CsR_-sXU0qWbyJTJl7N0BSTB8HcAGSpCJ54G1daZPnU6h2oANo2CTGsbHCoaGJHQ" ></div>
+            <div>
+                <h1>€<span id="bitcoin"></span></h1>
+                <h1>Bitcoin</h1>
+            </div>
+        </div>
+        <div class="coin-price">
+            <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhrUFoHC68rLHQYMV41awqGtoeU6qI-CkSVmcYK-KBCrOvL-jzwLOx8pN-5B8aALsHh1Zc9mmDm8LVQSSpdpsw0v6vrJsv4r9_lv0ic5aYbogc3i3h9mG6ZGMc7g9_cGSRh_soaKmXtpMEOxBFIsmiTa_wticu9T07MbqQ42J9NwowHp8tn8OUIBlhjqA" ></div>
+            <div>
+                <h1>€<span id="litecoin"></span></h1>
+                <h1>Litecoin</h1>
+            </div>
+        </div>
+       
+        <div class="coin-price">
+            <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgfcodOJm7ZIXw2kiqdo5abN4cUvFYgyqpKt91zHI8710ltPK5Ny_S5X93w9LSDsF5jW61frn3C8a_8w2GXu4bf0clzxuJljoQ8n6az5EI5zQOcl5W2LScP-1-41NQwPW5A3JWT9EwejtOnHsd3q2-llUsJJQ3Z74v_2FOPn0TrI2529NS9_hmFbvModw" ></div>
+            <div>
+                <h1>€<span id="ethereum"></span></h1>
+                <h1>Ethereum</h1>
+            </div>
+        </div>
+        <div class="coin-price">
+            <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEj9YzGIFUSMpRoWE4IjGl_o2zpdPkvtUS6jzIgZWEWl7ztYyV20oXu80A52v0R_nXpt_qXVBzxnfse2_pfeIbVHwQSR3oLqqAyMqVqnzJpdbSCBHA2b_zlheiLY3Bb0PYCEXQny7q-FnGE01ZtxVFVC8DbLWW-ZC1PC-gaqL7IC7ZfRxFOZufcv8lcY1g" ></div>
+            <div>
+                <h1>€<span id="dogecoin"></span></h1>
+                <h1>Dogecoin</h1>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
